@@ -445,9 +445,91 @@
           author: "Lisa Thompson",
           image: "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/4634x3478+288+0/resize/4634x3478!/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F3b%2Fd2%2Febe004e5443eb088215260749e47%2Fap24158717090869.jpg",
           content: "After a 128-year absence, cricket will return to the Olympic Games at Los Angeles 2028. The International Olympic Committee has approved a T20 format tournament featuring eight men's and eight women's teams."
+        },
+        {
+         id: 9,
+         title: "Virat Kohli",
+         summary: "One of the greatest batsmen in cricket history, known for his aggressive batting style and exceptional leadership",
+         date: "November 5, 1988",
+         category: "Batsman",
+         author:"virat",
+         image: "https://wallpapers.com/images/high/virat-kohli-hd-cricket-sports-art-a140iip6yvx38igo.webp",
+         content:"this virat."
+        },
+        {
+         id: 10,
+         title: "Dhoni",
+         summary: "Mahendra Singh Dhoni (MS Dhoni) is a former Indian cricketer and captain. He's known for his leadership, wicketkeeping, and finishing skills",
+         date: "July 7, 1981",
+         category: "Batsman",
+         author:"dhoni",
+         image: "dhoni.jpeg",
+         content:"Introduced to cricket as a wicketkeeper by his football coach."
+        },
+        {
+         id: 11,
+         title: "Sachin Tendulkar",
+         summary: "an Indian former international cricketer who captained the Indian national team. He is widely regarded as one of the greatest cricketers of all time",
+         date: "24 April 1973",
+         category: " greatest batsmen of all time",
+         author:"sachine",
+         image: "sachin.jpeg",
+         content:"People throw stones at you and you convert them into milestones."
+        },
+        {
+         id: 12,
+         title: "Rohit Sharma",
+         summary: "Rohit Sharma is an Indian cricketer and the captain of national cricket team in Test and ODI formats",
+         date: "30 April 1987",
+         category: "greatest opening batters",
+         author:"virat",
+         image: "Rohit Sharm.jpeg",
+         content:"He is also known as one of the greatest six hitters in cricket history."
+        },
+        {
+         id: 13,
+         title: "Ricky Ponting",
+         summary: "He is widely regarded as one of the greatest batsmen of all time and is the most successful captain in international cricket history, with 220 victories in 324 matches with a winning rate of 67.91%.",
+         date: "19 December 1974",
+         category: "cricket coach, commentator and former player",
+         author:"Ricky",
+         image: "Ricky Ponting1.jpeg",
+         content:"Ricky Ponting played in the IPL for the Kolkata Knight Riders."
+        },
+        {
+         id: 14,
+         title: "Travis Head",
+         summary: "Travis Michael Head is an Australian international cricketer who represents the Australia national cricket team in all formats and is the current Test vice-captain",
+         date: " 29 December 1993 ",
+         category: " Test vice-captai",
+         author:"travis",
+         image: "Travis Head1.jpeg",
+         content:"Head was a key member of the Australian team that won the 2023 ICC World Test Championship final and 2023 ICC Cricket World Cup final."
+        },
+        {
+         id: 15,
+         title: "Pat Cummins",
+         summary: "Patrick James Cummins is an Australian international cricketer who captains the Australia men's national cricket team in Test and One Day International cricket",
+         date: "8 May 1993",
+         category: "handy lower-order batsman",
+         author:"pat cummins",
+         image: "pat cummins1.jpeg",
+         content:"Cummins is widely regarded as one of the finest fast bowlers of his generation."
+        },
+        {
+         id: 16,
+         title: "Bumrah",
+         summary: "Jasprit Jasbirsingh Bumrah is an Indian cricketer who plays for the national team in all formats of the game",
+         date: " 6 December 1993",
+         category: "vice-captain of India ",
+         author:"bumrah",
+         image: "burmah.jpeg",
+         content:"He is the vice-captain of India in the Test format and has captained India in Tests and T20Is.."
         }
       ];
-
+      
+// And then in your main component, you would include:
+// <PlayerSection />
       const handleSearch = (e) => {
         e.preventDefault();
         if (searchQuery.trim() === '') return;
@@ -496,7 +578,7 @@
               <input 
                 type="text" 
                 placeholder="Search cricket news..." 
-                value={searchQuery}
+                value={searchQuery}https
                 onChange={(e) => setSearchQuery(e.target.value)}
               />
               <button type="submit">Search</button>
@@ -671,6 +753,7 @@
     };
 
     ReactDOM.render(<CricketNewsApp />, document.getElementById('app'));
+   
   </script>
 </body>
 </html>
